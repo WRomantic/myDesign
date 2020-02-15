@@ -1,0 +1,13 @@
+<!--pages/sort/sort.wxml-->
+<view class="sortHearder">
+  <view class="sortBody">
+    <w-search class="w-search"/>
+    <view class="sortNavBar">
+      <w-nav-bar>
+        <w-sort-body oneText="{{sortBodyDataArr.one}}" slot="one"/>
+        <w-sort-body oneText="{{sortBodyDataArr.two}}" slot="two"/>
+        <w-sort-body oneText="{{sortBodyDataArr.three}}" slot="three"/>
+      </w-nav-bar>
+    </view>
+  </view>
+</view>

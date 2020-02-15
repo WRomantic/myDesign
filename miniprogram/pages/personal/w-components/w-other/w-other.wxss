@@ -1,0 +1,44 @@
+/* pages/personal/w-components/w-other/w-other.wxss */
+
+.wother {
+  margin-top: 1.4rem;
+}
+
+.other {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  border-radius: 1px;
+
+}
+
+.other view {
+  width: 92%;
+  height: 3.1rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.8px solid rgb(231, 231, 231);
+}
+
+.other_text {
+  float: left;
+}
+
+.img {
+  height: 3rem;
+  width: 3rem;
+}
+
+.other view {
+  align-items: center;
+}
+
+.other image {
+  float: left;
+  height: 1.4rem;
+  width: 1.4rem;
+  margin: 0.1rem 0.5rem 0 1rem;
+}

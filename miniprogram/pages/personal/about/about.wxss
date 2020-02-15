@@ -1,0 +1,41 @@
+/* pages/personal/about/about.wxss */
+page {
+  background-color: #f2f2f2;
+  height: 100%;
+}
+.about .about_title {
+  background-color: #1885df;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-bottom-left-radius: 60rpx;
+  border-bottom-right-radius: 60rpx;
+}
+.about .about_title .about_title_info {
+  margin-bottom: 20vh;
+}
+.about .about_title .about_title_info image {
+  width: 110rpx;
+}
+.about .about_title .about_title_info view {
+  color: #fff;
+  margin-top: 20rpx;
+}
+.about .about_wrap {
+  margin: -20vh 50rpx 0;
+  background-color: #fff;
+  border-radius: 50rpx;
+  padding: 40rpx;
+}
+.about .about_wrap .about_wrap_title {
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+.about .about_wrap .about_wrap_contente {
+  text-indent: 70rpx;
+  line-height: 60rpx;
+  text-align: justify;
+  letter-spacing: 5rpx;
+}

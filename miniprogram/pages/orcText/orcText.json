@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "文本识别",
+  "usingComponents": {
+    "w-btn": "/common/w-btn/w-btn"
+  }
+}

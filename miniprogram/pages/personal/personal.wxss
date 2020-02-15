@@ -1,0 +1,20 @@
+/* pages/personal/personal.wxss */
+.personal{
+  background-color:#efefef;
+  height: 100vh;
+}
+.postion_photo{
+  width: 100%;
+  position: absolute;
+  background-size: 100% 100%;
+  filter: blur(8rpx);
+  z-index: 1;
+}
+.photo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10.5rem;
+  width: 100%;
+}
+

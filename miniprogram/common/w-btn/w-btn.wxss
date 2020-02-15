@@ -1,0 +1,18 @@
+/* common/w-btn/w-btn.wxss */
+.orcTextBtn{
+  display:  flex;
+  width: 70%;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 68vh;
+  background-color: rgb(59, 143, 221);
+  height: 2.6rem;
+  border-radius: 1.3rem;
+  overflow: hidden
+}
+.orcTextBtn text{
+  margin: 0.6rem
+}
+.orcTextBtnA{
+  background-color: rgb(59, 143, 221);
+}

@@ -1,0 +1,25 @@
+<!--components/w-nav-bar/w-nav-bar.wxml-->
+<view class="navTab">
+  <view class='topTabSwiper'>
+    <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}' data-current="0" bindtap='__checkCurrent'>
+      文字识别
+    </view>
+    <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}' data-current="1" bindtap='__checkCurrent'>
+      图片识别
+    </view>
+    <view class='tab  {{currentData == 2 ? "tabBorer" : ""}}' data-current="2" bindtap='__checkCurrent'>
+      其他相关
+    </view>
+  </view>
+  <swiper current="{{currentData}}" class='swiper' duration="300" bindchange="bindchange">
+    <swiper-item>
+      <view class='swiper_con'><slot name="one"></slot></view>
+    </swiper-item>
+    <swiper-item>
+      <view class='swiper_con'><slot name="two"></slot></view>
+    </swiper-item>
+    <swiper-item>
+      <view class='swiper_con'><slot name="three"></slot></view>
+    </swiper-item>
+  </swiper>
+</view>

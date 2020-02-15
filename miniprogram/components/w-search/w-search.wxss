@@ -1,0 +1,25 @@
+/* components/w-search/w-search.wxss */
+
+.wsearchHeader {
+  display: flex;
+  border-radius: 1.8rem;
+  padding: 0.2rem 0.6rem;
+  height: 1.8rem;
+  background-color: #ffffff;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.searchImg {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin: 0.2rem;
+}
+
+.wsearchHeader input {
+  font-size: 0.8rem;
+  height: 1.4rem;
+  margin-top: 0.2rem;
+  width: 90%;
+
+}

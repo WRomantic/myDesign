@@ -1,0 +1,13 @@
+<!--pages/personal/w-components/w-features/w-features.wxml-->
+<view class="features">
+    <view class="features_herder">
+      <image class="features_img" 
+      src="cloud://w-1314.772d-w-1314-1257815135/photo/icon/历史账单.png" />
+      <view>历史记录</view>
+    </view>
+    <view class="features_herder">
+      <image class="features_img" 
+      src="cloud://w-1314.772d-w-1314-1257815135/photo/icon/累计次数.png" />
+      <view>使用次数</view>
+    </view>
+</view>

@@ -1,0 +1,7 @@
+<!--pages/scantxt/scantxt.wxml-->
+<view class="scantxtHeader">
+  <image src="{{img}}" mode="" ></image>
+  <view wx:for="{{words_result}}" wx:key="index" wx:for-item="item">
+    <text>{{item.words}}</text>
+  </view>
+</view>

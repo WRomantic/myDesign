@@ -1,0 +1,13 @@
+<!--components/w-swiper-change/w-swiper-change.wxml-->
+<view class='swiperChangerA'>
+    <swiper class='swiperChangerB' display-multiple-items='1' circular previous-margin='50px' next-margin='20px' bindchange='change' current='{{current}}'>
+      <block wx:for="{{imgUrls}}" wx:key='index'>
+        <swiper-item class='swiperChangerItem'>
+          <view class="box" data-index='{{index}}' animation="{{index == current?animationData:animationData2}}">
+            <slot name="{{index}}"></slot>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+

@@ -1,0 +1,12 @@
+<!--components/w-head/w-head.wxml-->
+<view>
+  <view class="whead" style="border: px solid rgb(236, 233, 231)">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+    </button>
+    <!-- <image class="head_img" src="cloud://w-1314.772d-w-1314-1257815135/20180513224039_tgfwu.png" /> -->
+    <block wx:else>
+      <image class="head_img" src="{{userInfo.avatarUrl}}" />
+    </block>
+  </view>
+  <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+</view>

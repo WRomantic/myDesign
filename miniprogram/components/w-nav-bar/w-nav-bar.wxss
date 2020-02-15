@@ -1,0 +1,52 @@
+/* components/w-nav-bar/w-nav-bar.wxss */
+
+/* 最外层属性 */
+
+.navTab {
+  display: flex;
+}
+
+/* left 最外层属性 */
+
+.topTabSwiper {
+  width: 50%;
+  overflow: hidden;
+  border-radius: 0.2rem;
+}
+
+/* left Tab属性 */
+
+.tab {
+  float: left;
+  height: 2.6rem;
+  width: 100%;
+  text-align: center;
+  line-height: 2.6rem;
+
+}
+
+.topTabSwiper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.tabBorer {
+  color: rgb(0, 153, 255);
+  border-left: 0.2rem solid rgb(0, 153, 255);
+  background-color: rgb(255, 255, 255);
+}
+
+/* 右边 高度属性 */
+
+.swiper {
+  height: 90vh;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.swiper_con {
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+}

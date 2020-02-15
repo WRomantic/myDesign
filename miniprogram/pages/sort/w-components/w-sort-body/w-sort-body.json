@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "w-sort-block": "../w-sort-block/w-sort-block"
+  }
+}

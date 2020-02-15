@@ -1,0 +1,34 @@
+/* pages/sort/w-components/w-sort-body/w-sort-body.wxss */
+
+.sortBodtHeaderB {
+  width: 98%;
+  border: 0.2rem solid rgb(236, 234, 234);
+  height: 9rem;
+  overflow: hidden;
+  border-radius: 0.4rem;
+}
+
+.sortBodyImg {
+  width: 100%;
+}
+
+.sortBodText {
+  display: flex;
+  flex-direction: column;
+  position:  relative;
+  margin-top: -1.7rem;
+  text-align: left
+}
+.sortBodTextOne{
+  color:  snow;
+  margin-left: 0.4rem;
+}
+.sortBodTextTow{
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  padding-bottom: 1rem;
+}
+.sortBodtBlock{
+  display: flex;
+  justify-content:space-around;
+}

@@ -1,0 +1,50 @@
+{
+  "pages": [
+    
+    "pages/orcText/orcText",
+    "pages/scantxt/scantxt",
+    "pages/personal/personal",
+    "pages/sort/sort",
+    "pages/ photo/ photo",
+    "pages/personal/feedback/feedback",
+    "pages/personal/about/about",
+    "pages/personal/history/history"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/orcText/orcText",
+        "text": "首页",
+        "iconPath": "/images/tabbar/me.png",
+        "selectedIconPath": "/images/tabbar/sme.png"
+      },
+      {
+        "pagePath": "pages/ photo/ photo",
+        "text": "发现",
+        "iconPath": "/images/tabbar/me.png",
+        "selectedIconPath": "/images/tabbar/sme.png"
+      },
+      {
+        "pagePath": "pages/sort/sort",
+        "text": "分类",
+        "iconPath": "/images/tabbar/me.png",
+        "selectedIconPath": "/images/tabbar/sme.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "/images/tabbar/me.png",
+        "selectedIconPath": "/images/tabbar/sme.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#efefef",
+    "navigationBarTitleText": "ORC",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

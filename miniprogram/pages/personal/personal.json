@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "个人中心",
+  "usingComponents": {
+    "w-head": "/components/w-head/w-head",
+    "w-features": "./w-components/w-features/w-features",
+    "w-other": "./w-components/w-other/w-other"
+  }
+}

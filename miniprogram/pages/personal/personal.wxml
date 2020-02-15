@@ -1,0 +1,9 @@
+<!--pages/personal/personal.wxml-->
+<view class="personal">
+  <view class="postion_photo" style="background-image: url({{ImgBg}})"></view>
+  <view class="photo">
+    <w-head/>
+  </view>
+  <w-features />
+  <w-other />
+</view>

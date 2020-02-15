@@ -1,0 +1,14 @@
+/* pages/sort/sort.wxss */
+
+.sortHearder {
+  background-color: #efefef;
+  height: 100vh;
+}
+
+.sortBody {
+  padding: 0.5rem;
+}
+
+.sortNavBar {
+  margin-top: 0.2rem;
+}

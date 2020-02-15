@@ -1,0 +1,10 @@
+<!--components/w-search/w-search.wxml-->
+<view class="wsearchHeader">
+  <image class="searchImg" mode="widthFix" 
+    src="cloud://w-1314.772d-w-1314-1257815135/photo/icon/搜索 (1).png" />
+  <input type="text" 
+    confirm-type="search" 
+    placeholder-class="wsearch"
+    placeholder="请输入关键字搜索"
+  />
+</view>

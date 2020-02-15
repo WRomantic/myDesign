@@ -1,0 +1,4 @@
+/* pages/scantxt/scantxt.wxss */
+.scantxtHeader img{
+  width: 100%;
+}

@@ -1,0 +1,16 @@
+<!--pages/ photo/ photo.wxml-->
+<view>
+  <view>
+    <w-swiper-change id="myComponent">
+      <view slot="0">
+        <w-photo-body />
+      </view>
+      <view slot="1">
+        <w-photo-body />
+      </view>
+      <view slot="2">
+        <w-photo-body />
+      </view>
+    </w-swiper-change>
+  </view>
+</view>

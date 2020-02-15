@@ -1,0 +1,26 @@
+/* pages/sort/w-components/w-sort-block/w-sort-block.wxss */
+
+.sortBlockLitterA {
+  width: 4rem;
+  height: 5rem;
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+}
+
+.sortBlockLitterB {
+  width: 4rem;
+  height: 4rem;
+  background-color: rgb(240, 23, 8);
+  border-radius: 2rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.sortBlockLitterB image {
+  width: 60%;
+  height: 60%;
+  margin-top: 0.68rem;
+}
+.sortBlockTxt{
+  margin-top: 0.4rem;
+}

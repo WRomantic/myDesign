@@ -1,0 +1,19 @@
+<!--pages/personal/about/about.wxml-->
+<view class="about">
+  <view class="about_title">
+    <view class="about_title_info">
+      
+      <view class="about_title_name">当前版本1.0.0</view>
+    </view>
+  </view>
+  <view class="about_wrap">
+    <view class="about_wrap_title">垃圾分类,我们在行动</view>
+    <view class="about_wrap_contente">
+      世界上没有真正的垃圾，只有放错地方的资源现在，垃圾分类已经成为生活新时尚！
+      世界上没有真正的垃圾，只有放错地方的资源现在，垃圾分类已经成为生活新时尚！
+      世界上没有真正的垃圾，只有放错地方的资源现在，垃圾分类已经成为生活新时尚！
+      世界上没有真正的垃圾，只有放错地方的资源现在，垃圾分类已经成为生活新时尚！
+      世界上没有真正的垃圾，只有放错地方的资源现在，垃圾分类已经成为生活新时尚！
+    </view>      
+  </view>
+</view>
