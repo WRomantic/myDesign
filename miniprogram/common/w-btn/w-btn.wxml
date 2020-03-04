@@ -1,8 +1,10 @@
 <!--common/w-btn/w-btn.wxml-->
 <view>
   <view class="orcTextBtn">
-    <button class="orcTextBtnA" bindtap="__getCamera">拍照</button>
+    <button class="orcTextBtnA" bindtap="__getCamera" 
+    data-urldase="{{urlDase}}" typedata="{{typedata}}">拍照</button>
     <text>/</text>
-    <button class="orcTextBtnA" bindtap="__getAlbum">选取</button>
+    <button class="orcTextBtnA" bindtap="__getAlbum" 
+    data-urldase="{{urlDase}}" data-typedata="{{typedata}}">选取</button>
   </view>
 </view>

@@ -1,13 +1,12 @@
 <!--pages/ photo/w-photo-body/w-photo-body.wxml-->
-<view class="photoBodyA">
-  <view class="photoBodyB">
-    <view class="photoBodyBH1">图像识别</view>
-      <image  mode="widthFix" src="https://772d-w-1314-1257815135.tcb.qcloud.la/bg/photo/16746.jfif?sign=81f75c28a6b9b9858640715053fd70bd&t=1581485715"></image>
-      <view class="photoBodyBtn">
-        <button size="mini">拍照</button>
-        /
-        <button size="mini">选图</button>
-      </view>
-      <text>分享好友</text>
+<view>
+  <view wx:for="{{news[typeindex].list}}" wx:for-item="course" 
+  class='course-pannle-item' wx:for-index="idx" wx:key="index">
+    <block wx:if="{{typeindex == 522}}">
+      <w-video-black course="{{course}}" idx="{{idx}}" />
+    </block>
+    <block wx:else>
+      <w-recommend-black course="{{course}}" idx="{{idx}}"/>
+    </block>
   </view>
 </view>

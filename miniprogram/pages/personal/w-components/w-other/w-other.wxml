@@ -1,38 +1,38 @@
 <!--pages/personal/w-components/w-other/w-other.wxml-->
 <view class="wother">
-  <navigator class="other" url="/pages/personal/feedback/feedback" hover-class="navigator-hover">
-    <image src="https://772d-w-1314-1257815135.tcb.qcloud.la/photo/icon/%E6%94%B6%E8%97%8F.png?sign=03a659633fef22a0b2a6a4b57d696dcd&t=1581466877" />
-    <view>
+  <navigator class="other" url="/pages/personal/mylike/mylike" hover-class="navigator-hover">
+    <image src="https://772d-w-1314-1257815135.tcb.qcloud.la/photo/icon/%E6%94%B6%E8%97%8F%20(3).png?sign=b2e38e20b6f0506b6c336c8db2b08ccc&t=1582529024" />
+    <view style="border-bottom:0">
       <text class="other_text">我的收藏</text>
       <image class="img" src="cloud://w-1314.772d-w-1314-1257815135/photo/icon/箭头 (1).png" />
     </view>
   </navigator>
-  <navigator class="other" url="/pages/personal/history/history" hover-class="navigator-hover">
-    <image src="https://772d-w-1314-1257815135.tcb.qcloud.la/photo/icon/%E5%8E%86%E5%8F%B2%E8%B4%A6%E5%8D%95.png?sign=e954880e8575596baab4a799b685b3fc&t=1581466948" />
+  <navigator class="other" url="/pages/personal/myset/myset" hover-class="navigator-hover" style="margin-top: 1rem">
+    <image src="/images/tabbar/personal.png" />
     <view>
-      <text class="other_text">历史记录</text>
+      <text class="other_text">个人设置</text>
       <image class="img" src="cloud://w-1314.772d-w-1314-1257815135/photo/icon/箭头 (1).png" />
     </view>
   </navigator>
-  <navigator class="other" url="/pages/personal/feedback/feedback" hover-class="navigator-hover">
-    <image src="cloud://w-1314.772d-w-1314-1257815135/photo/icon/反馈 (1).png" />
+  <button class="other myidea" open-type="feedback">
+    <image src="https://772d-w-1314-1257815135.tcb.qcloud.la/photo/icon/%E6%84%8F%E8%A7%81%E5%8F%8D%E9%A6%88.png?sign=35619a6fc5dc432485844ff213d2eae3&t=1582519409" />
     <view>
       <text class="other_text">意见反馈</text>
       <image class="img" src="cloud://w-1314.772d-w-1314-1257815135/photo/icon/箭头 (1).png" />
     </view>
-  </navigator>
+  </button>
   <navigator class="other" url="/pages/personal/about/about" hover-class="navigator-hover">
-    <image src="cloud://w-1314.772d-w-1314-1257815135/photo/icon/更多-关于系统.png" />
+    <image src="https://772d-w-1314-1257815135.tcb.qcloud.la/photo/icon/%E5%85%B3%E4%BA%8E%20(1).png?sign=adcd6a2df6b087f643d992c0dfabd617&t=1582512497" />
     <view style="border-bottom:0">
       <text class="other_text">关于我们</text>
       <image class="img" src="cloud://w-1314.772d-w-1314-1257815135/photo/icon/箭头 (1).png" />
     </view>
   </navigator>
-  <navigator class="other" url="/pages/personal/about/about" hover-class="navigator-hover" style="margin-top: 1rem">
+  <button class="other myidea" style="margin-top: 1rem" open-type="share">
     <image src="https://772d-w-1314-1257815135.tcb.qcloud.la/photo/icon/%E5%88%86%E4%BA%AB.png?sign=ac83687494246294b25f309463ec7873&t=1581467556" />
     <view style="border-bottom:0">
       <text class="other_text">分享好友</text>
       <image class="img" src="cloud://w-1314.772d-w-1314-1257815135/photo/icon/箭头 (1).png" />
     </view>
-  </navigator>
+  </button>
 </view>

@@ -1,0 +1,22 @@
+/* pages/ photo/w-components/w-tab-nav/w-tab-nav.wxss */
+.topTabNav{
+  width: 100%;
+  height: 80rpx;
+  padding: 6rpx 0;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid rgb(224, 224, 224);
+  /* background-color:  aqua; */
+}
+.topTabNav .tabTxt{
+  float: left;
+  height: 60rpx;
+  line-height: 20rpx;
+  margin: 0 40rpx 0 0;
+  font-size: 38rpx;
+  /* font-weight:  bold; */
+  /* background-color:  blue; */
+}
+.tabBorer{
+  /* border-bottom: 8rpx rgb(224, 19, 4) solid; */
+  color: rgb(224, 19, 4);
+}

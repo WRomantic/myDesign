@@ -1,0 +1,36 @@
+<!--pages/orcText/w-components/w-orctxt-body/w-orctxt-body.wxml-->
+<view class="orctbody">
+  <!-- <view class="orctbodyFoot">植物识别</view> -->
+  <view class="orctbodyA">
+    <view class="orctbodHeader">{{indexData.title}}</view>
+    <image src="{{indexData.indexImg}}"></image>
+    <view class="orctbodyScanTxt">
+      <view>
+        <text>识别结果：</text>
+      </view>
+      <view class="orctbodyScanBalck">
+        <text>美人梅</text>
+        <progress percent="90" show-info />
+      </view>
+      <view>
+        <text>樱花</text>
+        <progress percent="8" show-info />
+      </view>
+      <view>
+        <text>垂丝海棠</text>
+        <progress percent="2" show-info />
+      </view>
+    </view>
+    <view class="orctbodyFoots">
+      <text>
+        {{indexData.footTxt}}
+      </text>
+    </view>
+  </view>
+  <view class="orctbodyB">
+    <w-btn url-dase="{{indexData.url}}" typedata="{{indexData.type}}"/>
+    <view class="orctbodyFX">
+      <text>分享好友</text>
+    </view>
+  </view>
+</view>

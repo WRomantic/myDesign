@@ -1,2 +1,4 @@
-<!--pages/personal/history/history.wxml-->
-<text>pages/personal/history/history.wxml</text>
+
+<scroll-view>
+  <w-history-black/>
+</scroll-view>

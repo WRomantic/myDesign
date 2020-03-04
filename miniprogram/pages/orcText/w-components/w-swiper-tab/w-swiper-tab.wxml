@@ -1,0 +1,12 @@
+<!--pages/orcText/w-components/w-swiper-tab/w-swiper-tab.wxml-->
+<view class='swiperTbaA'>
+    <swiper class='swiperTbaB' display-multiple-items='1'  previous-margin='30px' next-margin='30px'>
+      <block wx:for="{{arrayLenth}}" wx:key='index'>
+        <swiper-item class='swiperTabItem'>
+          <view class="TabBox" style="background-image: url({{}})">
+            <slot name="{{index}}"></slot>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>

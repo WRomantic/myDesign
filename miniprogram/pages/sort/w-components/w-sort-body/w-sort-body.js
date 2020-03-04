@@ -7,6 +7,10 @@ Component({
     oneText:{
       type:Object,
       value:""
+    },
+    textarr: {
+      type: Array,
+      value: null
     }
   },
 

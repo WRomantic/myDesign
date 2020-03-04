@@ -12,9 +12,9 @@ export async function getToken() {
   })
 }
 
-export function getOrcTxt(token, image) {
+export function getOrcTxt(token, image, urldase) {
   return request({
-    url: '/rest/2.0/ocr/v1/general_basic?access_token=' + token,
+    url: urldase + token,
     method: 'POST',
     header: { 'content-type':'application/x-www-form-urlencoded'},
     data: {

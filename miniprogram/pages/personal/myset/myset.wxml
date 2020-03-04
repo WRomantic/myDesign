@@ -1,0 +1,5 @@
+<!--pages/personal/myset/myset.wxml-->
+<view>
+  <view>基本设置</view>
+  <view>主题选择</view>
+</view>

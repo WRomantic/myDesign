@@ -1,2 +1,15 @@
 <!--pages/personal/feedback/feedback.wxml-->
-<text>pages/personal/feedback/feedback.wxml</text>
+<view  class="feelbackHeader">
+  <view>意见反馈</view>
+  <textarea placeholder="这里输入文字(字数不能少于15字)" bindinput="inputs"></textarea >
+  <view>图片(截取的相关反馈图片)</view>
+  <view class="feelBackImg">
+    <image src="/images/addimg/addimg.png"></image>
+  </view>
+  <view>联系方式</view>
+  <input placeholder="QQ/邮箱"></input>
+  <button size="default" class="feelbackBtn" type="{{primary}}" disabled="{{disabled}}" open-type='feedback'>
+    <image class='btnImg' src='/images/addimg/submit.png'></image>
+    <view>提交</view>
+  </button>
+</view>

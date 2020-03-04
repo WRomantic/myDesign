@@ -1,0 +1,20 @@
+<!--pages/personal/w-components/w-history-black/w-history-black.wxml-->
+<view>
+  <view wx:for="{{historyData}}" wx:for-item="itemData" wx:key="index" class="historyBlackB"      
+  bindlongpress="handleLongPress" 
+  data-id="{{itemData._id}}" data-index="{{index}}" 
+  bindtap="handleClick" data-fileID="{{itemData.fileID}}">
+    <view class="historyBlackImg">
+      <image src="{{itemData.fileID}}" mode="widthFix" />
+    </view>
+    <view class="historyBlackTxt">
+      <view class="historyBlackTxtA" decode="{{true}}">
+        <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        <block wx:for="{{itemData.scanTxt}}" wx:for-item="itemWords" wx:key="index">
+          {{itemWords.words}}
+        </block>
+      </view>
+      <view class="historyBlackTxtTime">时间：{{itemData.new_data}}</view>
+    </view>
+  </view>
+</view>

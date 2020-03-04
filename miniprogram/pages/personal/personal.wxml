@@ -6,4 +6,7 @@
   </view>
   <w-features />
   <w-other />
+  <view class="textfoot">
+    <text>欢迎使用Whacker-ORC系统</text>
+  </view>
 </view>

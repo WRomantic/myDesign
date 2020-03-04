@@ -1,0 +1,4 @@
+/* pages/personal/myset/myset.wxss */
+page{
+  padding: 8rpx;
+}

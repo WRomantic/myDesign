@@ -1,26 +1,21 @@
 /* pages/sort/w-components/w-sort-block/w-sort-block.wxss */
 
 .sortBlockLitterA {
-  width: 4rem;
-  height: 5rem;
-  margin-top: 0.8rem;
-  font-size: 0.8rem;
-}
-
-.sortBlockLitterB {
-  width: 4rem;
-  height: 4rem;
-  background-color: rgb(240, 23, 8);
-  border-radius: 2rem;
+  width: 100%;
   overflow: hidden;
   text-align: center;
+  padding: 18rpx 0rpx;
+  margin-right: 40rpx;
 }
 
-.sortBlockLitterB image {
-  width: 60%;
-  height: 60%;
-  margin-top: 0.68rem;
+
+.sortBlockLitterA image {
+  width: 80rpx;
+  height: 80rpx;
 }
 .sortBlockTxt{
-  margin-top: 0.4rem;
+ text-align: center;
+ margin-top: 6rpx;
+ font-size: 0.7rem;
+ color:  rgb(182, 182, 182);
 }

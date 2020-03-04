@@ -1,12 +1,14 @@
 {
   "pages": [
-    
     "pages/orcText/orcText",
+    "pages/index/index",
     "pages/scantxt/scantxt",
     "pages/personal/personal",
     "pages/sort/sort",
     "pages/ photo/ photo",
     "pages/personal/feedback/feedback",
+    "pages/personal/mylike/mylike",
+    "pages/personal/myset/myset",
     "pages/personal/about/about",
     "pages/personal/history/history"
   ],
@@ -15,20 +17,20 @@
       {
         "pagePath": "pages/orcText/orcText",
         "text": "首页",
-        "iconPath": "/images/tabbar/me.png",
-        "selectedIconPath": "/images/tabbar/sme.png"
+        "iconPath": "/images/tabbar/index.png",
+        "selectedIconPath": "/images/tabbar/sindex.png"
       },
       {
         "pagePath": "pages/ photo/ photo",
         "text": "发现",
-        "iconPath": "/images/tabbar/me.png",
-        "selectedIconPath": "/images/tabbar/sme.png"
+        "iconPath": "/images/tabbar/fine.png",
+        "selectedIconPath": "/images/tabbar/sfine.png"
       },
       {
         "pagePath": "pages/sort/sort",
         "text": "分类",
-        "iconPath": "/images/tabbar/me.png",
-        "selectedIconPath": "/images/tabbar/sme.png"
+        "iconPath": "/images/tabbar/sort.png",
+        "selectedIconPath": "/images/tabbar/ssort.png"
       },
       {
         "pagePath": "pages/personal/personal",
@@ -43,8 +45,8 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#efefef",
     "navigationBarTitleText": "ORC",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false
   },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "sitemapLocation": "sitemap.json"
 }

@@ -1,7 +1,6 @@
 /* pages/personal/w-components/w-other/w-other.wxss */
-
 .wother {
-  margin-top: 1.4rem;
+  margin-top: 1.2rem;
 }
 
 .other {
@@ -12,12 +11,14 @@
   background-color: rgb(255, 255, 255);
   margin: 0 auto;
   border-radius: 1px;
-
+  overflow: hidden;
+  height: 3.4rem;
+  font-size: 35rpx;
 }
 
 .other view {
   width: 92%;
-  height: 3.1rem;
+  height: 3.3rem;
   display: flex;
   justify-content: space-between;
   border-bottom: 0.8px solid rgb(231, 231, 231);
@@ -28,7 +29,7 @@
 }
 
 .img {
-  height: 3rem;
+  height: 2rem;
   width: 3rem;
 }
 
@@ -38,7 +39,11 @@
 
 .other image {
   float: left;
-  height: 1.4rem;
-  width: 1.4rem;
+  width: 1.8rem;
+  height: 1.8rem;
   margin: 0.1rem 0.5rem 0 1rem;
+}
+
+.myidea{
+  padding:0;
 }

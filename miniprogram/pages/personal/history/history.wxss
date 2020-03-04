@@ -1,1 +1,9 @@
 /* pages/personal/history/history.wxss */
+/* .scroll{
+  width: 100%;
+  height: 80vh;
+  background-color:  aqua;
+} */
+/* page{
+  background-color: rgb(240, 240, 240);
+} */

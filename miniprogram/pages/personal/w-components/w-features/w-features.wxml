@@ -1,13 +1,13 @@
 <!--pages/personal/w-components/w-features/w-features.wxml-->
 <view class="features">
-    <view class="features_herder">
+    <navigator class="features_herder" url="/pages/personal/history/history" hover-class="navigator-hover">
       <image class="features_img" 
-      src="cloud://w-1314.772d-w-1314-1257815135/photo/icon/历史账单.png" />
+      src="{{history_img}}" />
       <view>历史记录</view>
-    </view>
-    <view class="features_herder">
+    </navigator>
+    <view class="features_herder" catchtap="__showdata">
       <image class="features_img" 
-      src="cloud://w-1314.772d-w-1314-1257815135/photo/icon/累计次数.png" />
+      src="/images/tabbar/times.png" />
       <view>使用次数</view>
     </view>
 </view>

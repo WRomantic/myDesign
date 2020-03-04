@@ -1,0 +1,23 @@
+<!--pages/ photo/w-components/w-video-black/w-video-black.wxml-->
+<view>
+    <view wx:if="{{course.videoList}}" class="videoBlackA">
+      <view class="videoBlackA_txt">
+        <text>{{course.title}}</text>
+      </view>
+      <view class='video-item'>
+        <video wx:if='{{idx==playIndex}}' id='video{{idx}}' autoplay='{{true}}' show-center-play-btn="{{false}}" src='{{course.videoList[0]}}' controls="true" objectFit="cover">
+        </video>
+        <image class='video-cover' wx:if='{{idx!=playIndex}}' src='{{course.imgList[0]}}'></image>
+        <image class='video-play-btn' wx:if='{{idx!=playIndex}}' 
+        data-index='{{idx}}' bindtap='videoPlay' src='/images/play/play.png'></image>
+        <!-- <text wx:if='{{idx!=playIndex}}' class='video-duration fs-28'>{{course.duration}}</text> -->
+      </view>
+      <view class="videoBlackAFoot">
+        <!-- <image src="{{course.data.header.icon}}"></image> -->
+        <view class="videoBlackAFootText">
+          <text>{{course.source}}</text>
+        </view>
+        <image src="{{like_png}}" catchtap="__like"></image>
+      </view>
+    </view>
+</view>

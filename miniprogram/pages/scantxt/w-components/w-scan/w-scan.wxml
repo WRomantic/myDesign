@@ -1,0 +1,16 @@
+<!--pages/scantxt/w-components/w-scan/w-scan.wxml-->
+<view class="scantxtHeader">
+  <block wx:if="{{scan_class == 'txt'}}">
+    <image src="{{img}}" mode="widthFix" class="scan_img"></image>
+    <view wx:for="{{words_result}}" wx:key="index" wx:for-item="item">
+      <text>{{item.words}}</text>
+    </view>
+  </block>
+  <block wx:elif="{{scan_class == 'pic'}}">
+    <image src="{{img}}" mode="widthFix"></image>
+    <view wx:for="{{scan_pic}}" wx:key="index" wx:for-item="item">
+      <text>{{item.score}}</text>
+      <text>{{item.name}}</text>
+    </view>
+  </block>
+</view>

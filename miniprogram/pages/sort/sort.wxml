@@ -1,13 +1,20 @@
 <!--pages/sort/sort.wxml-->
 <view class="sortHearder">
   <view class="sortBody">
-    <w-search class="w-search"/>
-    <view class="sortNavBar">
+    <w-search class="w-search" />
+    <!-- <view class="sortNavBar">
       <w-nav-bar>
         <w-sort-body oneText="{{sortBodyDataArr.one}}" slot="one"/>
         <w-sort-body oneText="{{sortBodyDataArr.two}}" slot="two"/>
         <w-sort-body oneText="{{sortBodyDataArr.three}}" slot="three"/>
       </w-nav-bar>
-    </view>
+    </view> -->
+    <view class="title">文字识别</view>
+    <w-sort-body textarr="{{sortArr.text}}"/>
+    <view class="title">图片识别</view>
+    <w-sort-body textarr="{{sortArr.photo}}"/>
+    <view class="title">其他热门应用</view>
+    <w-sort-body textarr="{{sortArr.other}}"/>
+    <view class="aaa"> sssssssss</view>
   </view>
 </view>

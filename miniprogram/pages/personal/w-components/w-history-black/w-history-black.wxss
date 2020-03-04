@@ -1,0 +1,51 @@
+/* pages/personal/w-components/w-history-black/w-history-black.wxss */
+
+.historyBlackB {
+  height: 6.6rem;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0.6rem 12rpx;
+  border-bottom: 1rpx solid rgb(236, 236, 236);
+}
+
+.historyBlackImg {
+  width: 30%;
+  overflow: hidden;
+  border-radius: 6rpx;
+  background-color: rgb(209, 209, 209);
+}
+
+.historyBlackImg image {
+  width: 100%;
+}
+
+.historyBlackTxt {
+  width: 70%;
+  height: 6rem;
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  padding-left: 0.6rem;
+  position: relative;
+}
+
+.historyBlackTxtA {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  color:  rgb(78, 78, 78);
+  font-size: 0.9rem;
+}
+
+.historyBlackTxtTime {
+  position: absolute;
+  bottom: 0.4rem;
+  right: 0.4rem;
+  color: rgb(196, 194, 192);
+  font-size: 0.8rem;
+  font-style: oblique;
+}

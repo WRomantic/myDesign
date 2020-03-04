@@ -1,4 +1,8 @@
 /* components/w-head/w-head.wxss */
+.wheadA{
+  position: relative;
+  z-index: 99;
+}
 .whead{
   position: relative;
   height: 4.5rem;
@@ -22,4 +26,6 @@
 .userinfo-nickname{
   width: 100%;
   text-align: center;
+  margin-top: -0.6rem;
+  font-size: 1.2rem;
 }

@@ -1,0 +1,8 @@
+page{
+  background-color: #fafafa;
+}
+.orctxtHeaderA{
+  box-sizing: border-box;
+  height: 100vh;
+  background-size: 100% 100%;
+}

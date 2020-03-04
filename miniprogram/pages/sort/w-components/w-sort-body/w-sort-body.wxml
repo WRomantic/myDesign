@@ -1,15 +1,6 @@
 <!--pages/sort/w-components/w-sort-body/w-sort-body.wxml-->
 <view class="sortBodtHeaderA">
-  <view class="sortBodtHeaderB">
-    <image mode="widthFix" class="sortBodyImg" src="{{oneText.img}}" />
-    <view class="sortBodText">
-      <text class="sortBodTextOne">{{oneText.h1}}</text>
-      <text decode="{{true}}" class="sortBodTextTow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{oneText.h2}}</text>
-    </view>
-  </view>
-  <view class="sortBodtBlock">
-    <w-sort-block/>
-    <w-sort-block/>
-    <w-sort-block/>
+  <view class="sortEqual" wx:for="{{textarr}}" wx:key="index" wx:for-item="textarrs">
+    <w-sort-block textarr="{{textarrs}}" />
   </view>
 </view>

@@ -1,23 +1,32 @@
 // pages/ photo/w-photo-body/w-photo-body.js
+//获取应用实例
+var app = getApp();
 Component({
-  /**
-   * 组件的属性列表
-   */
   properties: {
-
+    news: {
+      type: Object,
+      value: null
+    },
+    typeindex: {
+      type: Number,
+      value: null
+    }
   },
 
-  /**
-   * 组件的初始数据
-   */
   data: {
-
+    like_png: "/images/play/slike.png",
+    bool_like: false,
+    TYPE: 522
   },
-
-  /**
-   * 组件的方法列表
-   */
+  lifetimes: {
+    created() {
+    },
+    ready() {
+      // 在组件在视图层布局完成后执行
+      console.log(this.data)
+    }
+  },
   methods: {
-
+  
   }
 })

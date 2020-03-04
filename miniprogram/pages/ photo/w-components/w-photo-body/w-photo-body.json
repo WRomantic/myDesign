@@ -1,4 +1,7 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "w-video-black": "../w-video-black/w-video-black",
+    "w-recommend-black": "../w-recommend-black/w-recommend-black"
+  }
 }

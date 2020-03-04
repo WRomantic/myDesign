@@ -1,0 +1,11 @@
+<!--pages/ photo/w-components/w-recommend-black/w-recommend-black.wxml-->
+<view class="recomHeader">
+  <view class="recomTitle">{{course.title}}</view>
+  <block wx:if="{{course.imgList.length}}">
+    <image src="{{course.imgList[0]}}" mode="widthFix"></image>
+  </block>
+  <view>
+    <text>{{course.source}}</text>
+    <text>{{course.postTime}}</text>
+  </view>
+</view>

@@ -1,4 +1,5 @@
 /* pages/scantxt/scantxt.wxss */
-.scantxtHeader img{
-  width: 100%;
+page{
+  padding: 8rpx;
+  box-sizing: border-box;
 }

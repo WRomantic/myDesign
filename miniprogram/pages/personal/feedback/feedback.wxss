@@ -1,1 +1,60 @@
 /* pages/personal/feedback/feedback.wxss */
+page {
+  background-color: #efefef;
+  padding: 0 15rpx;
+  box-sizing: border-box;
+}
+
+.feelbackHeader{
+  width: 100%;
+}
+
+.feelbackHeader textarea {
+  background-color: #fff;
+  width: 100%;
+  margin: 10rpx 0;
+  padding: 4rpx;
+  box-sizing: border-box;
+}
+
+.feelBackImg {
+  width: 100%;
+  background-color: #fff;
+  margin: 10rpx 0;
+}
+
+.feelbackHeader input {
+  background-color: #fff;
+  width: 100%;
+  margin: 12rpx 0;
+  height: 2.2rem;
+  padding: 4rpx;
+  box-sizing: border-box;
+}
+
+.feelBackImg image {
+  width: 120rpx;
+  height: 120rpx;
+  border: 6rpx solid rgb(230, 229, 229);
+  margin: 12rpx;
+}
+
+.feelbackBtn {
+  width: 100%;
+  margin-top: 80rpx;
+  border-radius: 98rpx;
+  display: flex;
+  background-color:  #b9b9b9;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.feelbackBtn image{
+  margin-right: 8rpx;
+  width: 46rpx;
+  height: 46rpx;
+}
+.feelbackBtn button{
+ 
+}
+

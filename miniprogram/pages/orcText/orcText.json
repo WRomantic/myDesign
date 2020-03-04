@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "文本识别",
   "usingComponents": {
-    "w-btn": "/common/w-btn/w-btn"
+    "w-swiper-tab": "./w-components/w-swiper-tab/w-swiper-tab",
+    "w-orctxt-body": "./w-components/w-orctxt-body/w-orctxt-body"
   }
 }

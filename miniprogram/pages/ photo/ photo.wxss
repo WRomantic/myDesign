@@ -1,1 +1,15 @@
 /* pages/ photo/ photo.wxss */
+page{
+  padding:0 28rpx;
+  box-sizing: border-box;
+  height: 100%;
+}
+.fine_body{
+  height: calc(100% - 80rpx);
+  width: 100%;
+}
+.scrollLoding{
+  margin: 10rpx;
+  text-align: center;
+  color:  rgb(168, 168, 168);
+}

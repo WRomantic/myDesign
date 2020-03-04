@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+        "w-btn": "/common/w-btn/w-btn"
+  }
+}
