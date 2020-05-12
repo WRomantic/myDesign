@@ -3,7 +3,7 @@
   <view wx:for="{{news[typeindex].list}}" wx:for-item="course" 
   class='course-pannle-item' wx:for-index="idx" wx:key="index">
     <block wx:if="{{typeindex == 522}}">
-      <w-video-black course="{{course}}" idx="{{idx}}" />
+      <w-video-black course="{{course}}" idx="{{idx}}" play-index="{{playIndex}}"/>
     </block>
     <block wx:else>
       <w-recommend-black course="{{course}}" idx="{{idx}}"/>

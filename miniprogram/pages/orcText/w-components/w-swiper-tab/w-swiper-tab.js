@@ -1,4 +1,5 @@
 // pages/orcText/w-components/w-swiper-tab/w-swiper-tab.js
+const app = getApp()
 Component({
   /**
    * 组件的属性列表
@@ -7,6 +8,10 @@ Component({
     arrayLenth: {
       type: Number,
       value: null
+    },
+    circular:{
+      type:Boolean,
+      value:false
     }
   },
   options: {
@@ -17,10 +22,10 @@ Component({
    * 组件的初始数据
    */
   data: {
-    imgUrls: 4
+    
   },
   ready(){
-
+    console.log(app.globalData+"ssssss")
   },
   /**
    * 组件的方法列表

@@ -1,0 +1,58 @@
+/* pages/questions/end/end.wxss */
+
+page {
+  padding: 1rpx;
+  box-sizing: border-box;
+  color:  black;
+}
+
+.end {
+  width: 90%;
+  height: 600rpx;
+  /* background-color: rgb(255, 255, 255); */
+  margin: 0 auto;
+  margin-top:calc(50% - 100rpx);
+  border: 1rpx rgb(255, 255, 255) solid;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.endHeader {
+  height: 100rpx;
+  width: 360rpx;
+  margin: 0 auto;
+  margin-top: -50rpx;
+  background-image: url("https://772d-w-1314-1257815135.tcb.qcloud.la/ORCYUN/bg/%E6%97%B6%E9%97%B4%E5%A4%B42.png?sign=91b3867fc544ebb4b8911951e3936624&t=1585230449");
+  background-size: 100% 100%;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 50rpx;
+  font-weight: 700;
+}
+
+.endIMG {
+  margin: 0 auto;
+  height: 140rpx;
+  width: 140rpx;
+  border-radius: 70rpx;
+  margin-top: 20rpx;
+  overflow: hidden;
+}
+
+.endIMG image {
+  height: 140rpx;
+  width: 140rpx;
+}
+.endtext{
+  text-align: center;
+}
+.btn1{
+  background-color:  #fff;
+  border: 2rpx rgb(53, 182, 233) solid;
+  width: 400rpx;
+  font-size:  24rpx;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}

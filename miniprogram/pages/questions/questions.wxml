@@ -1,0 +1,14 @@
+<!--pages/questions/questions.wxml-->
+<view>
+  <w-reverse id="w-reverse" reverse-times="{{reverseTimes}}" />
+  <view class="topic">
+    <view class="topic_title">{{index}}/5</view>
+    <view class="text">得分：{{grade}}</view>
+    <view>{{index}}、{{questions.question}}</view>
+    <image src="{{questions.img}}" class="que_img" mode="aspectFill"></image>
+    <block wx:for="{{questions.answers}}" wx:key="index" index-item="item">
+      <button plain disabled="{{btn_disabled}}" data-id="{{serial[index]}}" type="{{(answers == serial[index])?'primary':''}}" bindtap="__Click" hover-class="hover-class">{{serial[index]}}、{{item}}
+      </button>
+    </block>
+  </view>
+</view>

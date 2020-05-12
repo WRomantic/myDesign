@@ -5,8 +5,8 @@
 }
 .whead{
   position: relative;
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 150rpx;
+  width: 150rpx;
   background-color:  rgb(255, 255, 255);
   border-radius: 50%;
   overflow:  hidden;
@@ -14,14 +14,14 @@
   z-index: 99;
 }
 .whead button{
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 150rpx;
+  width: 150rpx;
   background-image: url("https://772d-w-1314-1257815135.tcb.qcloud.la/photo/icon/%E8%B4%A6%E5%8F%B7%E7%AE%A1%E7%90%86.png?sign=168b9eaa24d0cdc2487e2dd8e9246ade&t=1581414266");
   background-size: 95%;
 }
 .head_img{
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 150rpx;
+  width: 150rpx;
 }
 .userinfo-nickname{
   width: 100%;

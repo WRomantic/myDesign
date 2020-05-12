@@ -1,0 +1,4 @@
+<!--pages/questions/w-components/w-reverse/w-reverse.wxml-->
+<view class="times" >
+  <view style="display: inline-block;" animation="{{animationData}}">{{time}}</view>
+</view>

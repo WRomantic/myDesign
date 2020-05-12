@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "w-video-black": "../../photo/w-components/w-video-black/w-video-black"
+  }
 }

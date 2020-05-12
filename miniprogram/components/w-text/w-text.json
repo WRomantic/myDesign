@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "w-head": "/components/w-head/w-head"
+  }
+}

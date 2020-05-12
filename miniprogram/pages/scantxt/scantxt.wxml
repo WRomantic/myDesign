@@ -1,4 +1,5 @@
 <!--pages/scantxt/scantxt.wxml-->
 <view class="scantxtHeader">
-  <w-scan img="{{img}}" words_result="{{words_result}}" scan_pic="{{scan_pic}}" scan_class="{{scan_class}}"/>
+  <w-scan img="{{img}}" words_result="{{words_result}}" 
+  scan_pic="{{scan_pic}}" typedata="{{typedata}}" redwine_result="{{redwine_result}}"/>
 </view>

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "w-btn": "/common/w-btn/w-btn",
+    "w-orctxt-body": "../../../orcText/w-components/w-orctxt-body/w-orctxt-body"
+  }
+}

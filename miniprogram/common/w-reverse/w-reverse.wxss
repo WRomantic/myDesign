@@ -1,0 +1,14 @@
+/* pages/questions/w-components/w-reverse/w-reverse.wxss */
+.times{
+  background-color:  rgb(252, 252, 252);
+  height: 100rpx;
+  width: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 50rpx;
+  border-radius: 50%;
+  border: 10rpx solid rgb(238, 192, 43);
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+}

@@ -16,7 +16,8 @@ Component({
   data: {
     like_png: "/images/play/slike.png",
     bool_like: false,
-    TYPE: 522
+    TYPE: 522,
+    playIndex:null
   },
   lifetimes: {
     created() {

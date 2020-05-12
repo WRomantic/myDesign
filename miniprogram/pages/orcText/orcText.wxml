@@ -1,7 +1,8 @@
 <view class="orctxtHeaderA">
-  <w-swiper-tab arrayLenth="{{indexDatas.length}}">
+  <w-swiper-tab arrayLenth="{{indexDatas.length + 1}}" circular="{{circular}}">
     <block wx:for="{{indexDatas}}" wx:key='index' wx:for-item="indexData">
         <w-orctxt-body slot="{{index}}" index-data="{{indexData}}"/>
     </block>
+    <w-text slot="{{indexDatas.length}}"/>
   </w-swiper-tab> 
 </view>

@@ -1,0 +1,5 @@
+<!--pages/personal/historyscan/historyscan.wxml-->
+<view>
+   <w-scan img="{{img}}" words_result="{{words_result}}" 
+  scan_pic="{{scan_pic}}" typedata="{{typedata}}" redwine_result="{{redwine_result}}"/>
+</view>

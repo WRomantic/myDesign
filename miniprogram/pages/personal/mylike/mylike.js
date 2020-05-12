@@ -5,62 +5,32 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    news: {
+      ["Video"]: {
+        page: 0,
+        list: []
+      }
+    },
+    currentType:"Video"
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  onLoad: function(options) {
+    this.__findMovice()
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
   onReachBottom: function () {
-
+    this.__findMovice()
   },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  __findMovice: function() {
+    const db = wx.cloud.database()
+    const page = this.data.news["Video"].page
+    console.log(page)
+    db.collection('z_likemovice').skip(page * 10).limit(10).get().then(res => {
+      let news = this.data.news
+      news["Video"].list.push(...res.data)
+      news["Video"].page ++
+      console.log(news["Video"].page)
+      this.setData({
+        news
+      })
+    })
   }
 })

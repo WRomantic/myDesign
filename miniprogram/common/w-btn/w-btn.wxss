@@ -1,18 +1,31 @@
 /* common/w-btn/w-btn.wxss */
-.orcTextBtn{
-  display:  flex;
-  width: 86%;
+
+.orcTextBtn {
+  display: flex;
+  width: 100%;
   justify-content: space-around;
   margin: 0 auto;
-  /* margin-top: 68vh; */
-  background-color: rgb(221, 221, 221);
-  height: 2.6rem;
-  border-radius: 1.3rem;
-  overflow: hidden
+  margin-top: 16rpx;
+  overflow: hidden;
+
 }
-.orcTextBtn text{
-  margin: 0.6rem
+
+.orcTextBtn text {
+  margin: 0.6rem;
 }
-.orcTextBtnA{
-  background-color: rgb(221, 221, 221);
+
+.orcTextBtnA {
+  color: rgb(248, 248, 248);
+  width: 42%;
+  background-image: linear-gradient(to bottom right, #008af5, #00a6f4);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnImg {
+  margin-right: 18rpx;
+  width: 40rpx;
+  height: 40rpx;
 }

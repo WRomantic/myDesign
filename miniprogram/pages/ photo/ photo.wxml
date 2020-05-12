@@ -1,9 +1,0 @@
-<!--pages/ photo/ photo.wxml-->
-<view style="height:100%;">
-  <w-tab-nav itemArr="{{['推荐', '视频', '头条','军事','要闻']}}" bind:tabclick="tabClick"/>
-  <!-- <view class="w_tab"><text>推荐</text><text>视频</text><text>旅游</text><text>段子</text></view> -->
-  <scroll-view class="fine_body" scroll-y refresher-enabled bindscrolltolower="__scrollmoreData" >
-    <w-photo-body news="{{news}}" typeindex="{{currentType}}"/>
-    <view class="scrollLoding">加载中</view>
-  </scroll-view>
-</view>

@@ -9,7 +9,8 @@ import {
 
 import {
   getBase64,
-  getImg
+  getImg,
+  getToday
 } from '../../utils/utils.js'
 import {
   IMGCLASSIFYurl,
@@ -44,23 +45,29 @@ Page({
         url: ANIMALurl,
         type: "animal"
       }
-    ]
+    ],
+    circular: ''
   },
   onLoad: function() {
-    // 获取用户信息
-    wx.getSetting({
-      success: res => {
-        console.log(res.authSetting['scope.userInfo']);
-        if (res.authSetting['scope.userInfo']) {
-          // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
-          wx.getUserInfo({
-            success: res => {
-              app.globalData.userInfo = res.userInfo
-              console.log(res);
-            }
-          })
-        }
-      }
+
+    this.__getMysetData()
+    console.log(app.globalData)
+  },
+  onShow:function(){
+    this.setData({
+      circular: app.globalData.circular
     })
+  },
+  __getMysetData:async function () {
+    const db = wx.cloud.database();
+    let mysetDatas = await db.collection("z_myset").get()
+    const mysetData = mysetDatas.data
+
+    if (mysetData.length) {
+      app.globalData.circular = mysetData[0].circular
+      this.setData({
+        circular: mysetData[0].circular
+      })
+    } 
   }
 })

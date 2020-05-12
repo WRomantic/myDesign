@@ -1,9 +1,0 @@
-<!--pages/ photo/w-components/w-tab-nav/w-tab-nav.wxml-->
-<view class='topTabNav'>
-  <block wx:for="{{itemArr}}" wx:for-item="item" wx:for-index="index" wx:key="index">
-    <text class='tabTxt  {{currentData == index ? "tabBorer" : ""}}' 
-    data-current="{{index}}" bindtap='__checkCurrent'>
-      {{item}}
-    </text>
-  </block>
-</view>

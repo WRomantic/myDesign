@@ -3,6 +3,8 @@
   "usingComponents": {
     "w-photo-body": "./w-components/w-photo-body/w-photo-body",
     "w-swiper-change": "/components/w-swiper-change/w-swiper-change",
-    "w-tab-nav": "./w-components/w-tab-nav/w-tab-nav"
-  }
+    "w-nav": "/common/w-nav/w-nav",
+    "w-video-black": "./w-components/w-video-black/w-video-black"
+  },
+  "enablePullDownRefresh": true
 }

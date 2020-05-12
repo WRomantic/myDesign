@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "w-scan": "../../scantxt/w-components/w-scan/w-scan"
+  }
+}

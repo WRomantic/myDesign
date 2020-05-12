@@ -8,9 +8,13 @@ Component({
       type:String,
       value:''
     },
-    scan_class: {
+    typedata: {
       type: String,
       value: ''
+    },
+    redwine_result:{
+      type: Object,
+      value: null
     },
     words_result:{
       type:Array,
@@ -19,6 +23,15 @@ Component({
     scan_pic:{
       type: Array,
       value: []
+    }
+  },
+  lifetimes: {
+    created() {
+
+    },
+    ready() {
+      // 在组件在视图层布局完成后执行
+      console.log(this.data)
     }
   },
 

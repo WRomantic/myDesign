@@ -14,13 +14,5 @@
   margin-top: 0.2rem;
 }
 .title{
-  padding: 12rpx 0;
-}
-.aaa{
-  position: absolute;
-  top: 0;
-  z-index: 99;
-  width: 100%;
-  height: 100vh;
-  background-color:  rgba(153, 153, 153,0.4);
+  padding: 12rpx 8rpx;
 }

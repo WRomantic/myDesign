@@ -1,0 +1,6 @@
+<!--common/w-nav/w-nav.wxml-->
+<scroll-view class='topTabNav' scroll-x>
+  <view class="topTabNavFram">
+    <text wx:for="{{itemArr}}" wx:for-item="item" wx:for-index="index" wx:key="index" class="tabTxt  {{currentData==index ? 'tabBorer' : ''}}" data-current="{{index}}" bindtap='__checkCurrent'>{{item}}</text>
+  </view>
+</scroll-view>

@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "w-history-black": "../w-components/w-history-black/w-history-black"
+    "w-history-black": "../w-components/w-history-black/w-history-black",
+    "w-nav": "/common/w-nav/w-nav"
   }
 }

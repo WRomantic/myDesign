@@ -1,4 +1,7 @@
-
-<scroll-view>
-  <w-history-black/>
-</scroll-view>
+<!--pages/personal/history/history.wxml-->
+<view>
+  <w-nav itemArr="{{itemArr}}" bind:tabclick="tabClick" />
+  <scroll-view class="history_body" scroll-y bindscrolltolower="__scrollmoreData">
+    <w-history-black history-data="{{historyData[typedata].list}}" typedata="{{typedata}}" bind:myhandleLongPress="__myhandleLongPress" />
+  </scroll-view>
+</view>

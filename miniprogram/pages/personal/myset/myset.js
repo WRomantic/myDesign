@@ -1,66 +1,52 @@
 // pages/personal/myset/myset.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    circular:false,
+    checked: false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      checked: app.globalData.circular
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  onUnload: function(){
+    this.__savaSet(app.globalData.circular, app.globalData.mybg)
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  __switch1Change: function (event){
+    console.log(event.detail.value)
+    app.globalData.circular = event.detail.value
   },
-
   /**
-   * 生命周期函数--监听页面隐藏
+   * 保存设置数据到数据库
    */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  __savaSet: async function (circular = false, mybg = "") {
+    const db = wx.cloud.database();
+    const savaSetDatas = await db.collection("z_myset").get()
+    const savaSetData = savaSetDatas.data
+    console.log(circular)
+    if (savaSetData.length) {
+      let scanTypeUpdate = await db.collection("z_myset").doc(savaSetData[0]._id).update({
+        data: {
+          circular,
+          mybg
+        },
+      })
+    } else {
+      let addData = await db.collection("z_myset").add({
+        data: {
+          circular,
+          mybg
+        }
+      })
+    }
   }
 })

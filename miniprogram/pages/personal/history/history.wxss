@@ -1,9 +1,6 @@
 /* pages/personal/history/history.wxss */
-/* .scroll{
+
+.history_body {
+  height:calc(100vh - 80rpx);
   width: 100%;
-  height: 80vh;
-  background-color:  aqua;
-} */
-/* page{
-  background-color: rgb(240, 240, 240);
-} */
+}

@@ -1,0 +1,39 @@
+/* components/w-text/w-text.wxss */
+
+.MyText {
+  background-image: url("https://772d-w-1314-1257815135.tcb.qcloud.la/ORCYUN/bg/%E8%AF%95%E9%A2%983.jpg?sign=618867602750d16a851327f9cf294e0a&t=1585224394");
+  /* background-image: linear-gradient(to bottom right, #2193b0, #6dd5ed); */
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  border: 0.6rpx solid rgb(243, 243, 243);
+}
+
+.textHeader {
+  width: 100%;
+  height: calc(100% - 0rpx);
+  padding: 1rpx;
+  /* background-image: linear-gradient(to bottom right, #008af5, #00a6f4); */
+}
+
+.textHeaderOne {
+  height: 300rpx;
+  width: 240rpx;
+  background-image: url("https://772d-w-1314-1257815135.tcb.qcloud.la/ORCYUN/bg/%E6%A0%87%E7%AD%BE.png?sign=7db47a6fc0ffe3aa80e1ea1d615b1cc6&t=1585225674");
+  background-size: 100% 100%;
+  margin: 4rpx 20rpx;
+  padding: 30rpx 45rpx;
+  box-sizing: border-box;
+  margin-top:-8rpx;
+}
+
+.textHeaderBtn {
+  width: 70%;
+  color: #fff;
+  background-image: linear-gradient(to bottom right, #008af5, #00a6f4);
+  position: absolute;
+  bottom: 100rpx;
+  right: 15%;
+}

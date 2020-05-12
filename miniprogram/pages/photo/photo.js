@@ -34,22 +34,25 @@ Page({
         list: []
       },
     }, //新闻
-    currentType: 521, //新闻类型
+    currentType: 522, //新闻类型
+    playIndex: -1
   },
   onLoad: function(options) {
 
     this.__getNewsData(522) //Video
-    this.__getNewsData(525) //Recommend
-    this.__getNewsData(521) //Headlines
-    this.__getNewsData(511) //Game
-    this.__getNewsData(518) //Focus
+    // this.__getNewsData(525) //Recommend
+    // this.__getNewsData(521) //Headlines
+    // this.__getNewsData(511) //Game
+    // this.__getNewsData(518) //Focus
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function() {
-
+  onReady: function() {},
+  //用户下拉加载更多
+  onPullDownRefresh: function() {
+    this.__onPullDownRefresh(this.data.currentType)
+  },
+   //用户上拉加载更多
+  onReachBottom: function() {
+    this.__scrollmoreData()
   },
 
   __scrollmoreData: async function() {
@@ -78,9 +81,6 @@ Page({
     this.setData({
       currentType: currentType
     })
-    // console.log(this.selectComponent('.tab-control'));
-    // this.selectComponent('.tab-control').setCurrentIndex(e.detail.index)
-    // this.selectComponent('.tab-control-temp').setCurrentIndex(e.detail.index)
   },
   __getNewsData(type) {
     // 1.获取数据对应的页码
@@ -106,15 +106,41 @@ Page({
       this.setData({
         news: news
       })
+      console.log(res)
     })
   },
 
-
-  __onPullDownRefresh: function() {
+  /**
+   * 上啦加载数据
+   */
+  __onPullDownRefresh: function(type) {
     wx.showNavigationBarLoading() //在标题栏中显示加载
-    setTimeout(function() {
+
+    const page = 1; // 1.获取数据对应的页码
+
+    // 2.请求数据
+    wx.cloud.callFunction({
+      name: 'request',
+      data: {
+        page,
+        type
+      }
+    }).then(res => {
+      // 1.取出数据
+      const list = JSON.parse(res.result).data;
+
+      // 2.将数据临时获取
+      const news = this.data.news;
+      news[type].list = list
+      news[type].page += 1;
+      console.log(news)
+      // 3.最新的goods设置到goods中
+      this.setData({
+        news: news,
+        playIndex:-1
+      })
       wx.hideNavigationBarLoading() //完成停止加载
       wx.stopPullDownRefresh() //停止下拉刷新
-    }, 1500);
+    })
   }
 })

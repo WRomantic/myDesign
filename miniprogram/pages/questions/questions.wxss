@@ -1,0 +1,52 @@
+/* pages/questions/questions.wxss */
+
+page {
+  padding: 8rpx;
+  box-sizing: border-box;
+}
+
+.topic {
+  width: 100%;
+  margin: 0 auto;
+  border: 1rpx solid rgb(255, 255, 255);
+  background-size: 100% 100%;
+  background-image: url("https://772d-w-1314-1257815135.tcb.qcloud.la/ORCYUN/bg/%E6%8F%90%E8%83%8C%E6%99%AF.png?sign=e9e0299eec26008b3f336b20eb47ac06&t=1585226386");
+  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); */
+  border-radius: 12rpx;
+  padding: 60rpx 20rpx 60rpx 90rpx;
+  margin-top: 20rpx;
+  margin-left: -20rpx;
+  box-sizing: border-box;
+}
+
+button[plain] {
+  border: 0;
+  margin-top: 4rpx;
+  color: #424242;
+  text-align:  left;
+}
+
+.topic_title {
+  margin: 0 auto;
+  margin-top: -40rpx;
+  width: 300rpx;
+  height: 100rpx;
+  /* background-image: url("https://772d-w-1314-1257815135.tcb.qcloud.la/ORCYUN/bg/%E6%97%B6%E9%97%B4%E5%A4%B4.png?sign=ffb137e14d32ac903487da9837d9d41d&t=1585226094");
+  background-size: 100% 100%; */
+  text-align: center;
+  line-height: 60rpx;
+  font-weight: 700;
+  border-radius: 4rpx;
+}
+
+.que_img {
+  width: 96%;
+  height: 420rpx;
+  padding: 40rpx;
+  box-sizing: border-box;
+}
+.text{
+  font-weight:  bold;
+  margin-top: -50rpx;
+  margin-bottom: 50rpx;
+}

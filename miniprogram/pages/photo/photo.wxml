@@ -1,0 +1,8 @@
+<!--pages/ photo/ photo.wxml-->
+<view style="height:100%;">
+  <!-- <w-nav itemArr="{{['推荐','视频','头条','军事','要闻']}}" bind:tabclick="tabClick"/> -->
+  <view class="fine_body"  bindscrolltolower="__scrollmoreData" >
+    <w-video-black news="{{news}}" typeindex="{{currentType}}" play-index="{{playIndex}}"/>
+    <view class="scrollLoding">加载中</view>
+  </view>
+</view>

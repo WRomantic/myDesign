@@ -1,0 +1,9 @@
+<!--pages/sort/w-components/w-sort-scan/w-sort-scan.wxml-->
+<view> 
+  <view class="sortScan" catchtap="__flostBool">
+    <view class="tips">小提示：点击空白出可退出</view>
+  </view>
+  <view class=".sortScanA">
+    <w-orctxt-body index-data="{{indexData}}"  typedata="{{indexData.type}}" index-bool="{{true}}"/>
+  </view>
+</view>

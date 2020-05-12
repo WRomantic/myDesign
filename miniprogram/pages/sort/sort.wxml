@@ -1,7 +1,7 @@
 <!--pages/sort/sort.wxml-->
 <view class="sortHearder">
   <view class="sortBody">
-    <w-search class="w-search" />
+    <!-- <w-search class="w-search" /> -->
     <!-- <view class="sortNavBar">
       <w-nav-bar>
         <w-sort-body oneText="{{sortBodyDataArr.one}}" slot="one"/>
@@ -10,11 +10,13 @@
       </w-nav-bar>
     </view> -->
     <view class="title">文字识别</view>
-    <w-sort-body textarr="{{sortArr.text}}"/>
+    <w-sort-body textarr="{{sortArr.text}}" bind:btnScan="btnScan" sort-type="text"/>
     <view class="title">图片识别</view>
-    <w-sort-body textarr="{{sortArr.photo}}"/>
+    <w-sort-body textarr="{{sortArr.photo}}" bind:btnScan="btnScan" sort-type="pic"/>
     <view class="title">其他热门应用</view>
     <w-sort-body textarr="{{sortArr.other}}"/>
-    <view class="aaa"> sssssssss</view>
+    <block wx:if="{{scanBool}}">
+      <w-sort-scan bind:flostBool="flostBool" index-data="{{indexData}}"/>
+    </block>
   </view>
 </view>

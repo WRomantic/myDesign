@@ -1,4 +1,12 @@
 /* pages/scantxt/w-components/w-scan/w-scan.wxss */
+page{
+  padding: 8rpx;
+  box-sizing: border-box;
+}
 .scantxtHeader image{
   width: 100%;
+}
+.frame{
+  border: 2rpx solid rgb(45, 155, 219);
+  position: absolute;
 }

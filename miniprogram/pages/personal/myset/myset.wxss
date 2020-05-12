@@ -1,4 +1,20 @@
 /* pages/personal/myset/myset.wxss */
 page{
   padding: 8rpx;
+  box-sizing: border-box;
+}
+.setHeader{
+  margin: 10rpx 0;
+  font-weight: bold;
+  font-size: 40rpx;
+}
+.setBody{
+  display: flex;
+  justify-content:space-between;
+  font-size: 36rpx;
+  margin: 20rpx 0 ;
+}
+.setBody image{
+  height: 50rpx;
+  width: 50rpx;
 }

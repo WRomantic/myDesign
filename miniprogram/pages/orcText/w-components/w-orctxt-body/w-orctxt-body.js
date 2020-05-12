@@ -7,17 +7,21 @@ Component({
     indexData: {
       type: Object,
       value: null
+    },
+    indexBool:{
+      type: Boolean,
+      value: false
     }
   },
   data: {
-    scanImg:"https://772d-w-1314-1257815135.tcb.qcloud.la/bg/index/3.jpg?sign=0ea88406eabf6277d21de1255882a007&t=1582699432"
+    
   },
   lifetimes: {
     created() {
+      
     },
     ready() {
       // 在组件在视图层布局完成后执行
-      console.log(this.data)
     }
   },
   methods: {

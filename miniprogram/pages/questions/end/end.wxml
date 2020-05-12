@@ -1,0 +1,12 @@
+<!--pages/questions/end/end.wxml-->
+<view class="end">
+  <view class="endHeader">成果</view>
+  <view class="endIMG">
+    <image src="{{userInfo.avatarUrl}}"></image>
+  </view>
+  <view class="endtext" style="margin-bottom:40rpx">{{userInfo.nickName}}</view>
+  <view class="endtext">答对:{{yes}}</view>
+  <view class="endtext">打错:{{erron}}</view>
+  <button class="btn1">分享好友</button>
+  <button class="btn2" bindtap="__goHome">返回主页</button>
+</view>

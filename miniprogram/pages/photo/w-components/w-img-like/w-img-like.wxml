@@ -1,0 +1,4 @@
+<!--pages/photo/w-components/w-img-like/w-img-like.wxml-->
+<view>
+  <image src="{{bool_like ? like_png : likes_png}}" catchtap="__like"></image>
+</view>

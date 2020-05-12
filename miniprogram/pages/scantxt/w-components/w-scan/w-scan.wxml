@@ -1,16 +1,46 @@
 <!--pages/scantxt/w-components/w-scan/w-scan.wxml-->
 <view class="scantxtHeader">
-  <block wx:if="{{scan_class == 'txt'}}">
+  <block wx:if="{{(typedata == 'font') || (typedata =='accurate_base')}}">
     <image src="{{img}}" mode="widthFix" class="scan_img"></image>
     <view wx:for="{{words_result}}" wx:key="index" wx:for-item="item">
-      <text>{{item.words}}</text>
+      <text selectable="true">{{item.words}}</text>
     </view>
   </block>
-  <block wx:elif="{{scan_class == 'pic'}}">
+  <block wx:elif="{{(typedata == 'animal') || (typedata == 'plant') || (typedata == 'food') ||(typedata == 'car')}}">
     <image src="{{img}}" mode="widthFix"></image>
     <view wx:for="{{scan_pic}}" wx:key="index" wx:for-item="item">
-      <text>{{item.score}}</text>
-      <text>{{item.name}}</text>
+      <text>{{index + 1}}、{{item.name}}</text>
+      <text>{{item.probability}}</text>
+      <text>{{item.year}}</text>
+      <progress percent="{{item.score * 100}}" show-info/>
     </view>
+  </block>
+  <block wx:elif="{{(typedata == 'scene')}}">
+    <image src="{{img}}" mode="widthFix"></image>
+    <view wx:for="{{scan_pic}}" wx:key="index" wx:for-item="item">
+      <text>{{index + 1}}、{{item.keyword}}</text>
+      <text>{{item.root}}</text>
+      <progress percent="{{item.score * 100}}" show-info/>
+    </view>
+  </block>
+  <block wx:elif="{{(typedata == 'subject')}}">
+    <image src="{{img}}" mode="widthFix"></image>
+    <view style="width:{{redwine_result.width}}rpx;height:{{redwine_result.height}}rpx;top:{{redwine_result.top}}rpx;left:{{redwine_result.left}}rpx" class="frame">
+    </view>
+  </block>
+  <block wx:elif="{{typedata == 'redwine'}}">
+    <image src="{{img}}" mode="widthFix"></image>
+    <view>酒类型:{{redwine_result.classifyByColor}}</view>
+    <view>糖分类型:{{redwine_result.classifyBySugar}}</view>
+    <view>色泽:{{redwine_result.color}}</view>
+    <view>国家中文:{{redwine_result.countryCn}}</view>
+    <view>国家英文:{{redwine_result.countryEn}}</view>
+    <view>葡萄品种:{{redwine_result.grapeCn}}</view>
+    <view>{{redwine_result.hasdetail}}</view>
+    <view>{{redwine_result.regionCn}}</view>
+    <view>{{redwine_result.subRegionCn}}</view>
+    <view>{{redwine_result.subRegionEn}}</view>
+    <view>{{redwine_result.tasteTemperature}}</view>
+    <view>{{redwine_result.wineNameCn}}</view>
   </block>
 </view>

@@ -1,5 +1,13 @@
 <!--pages/personal/myset/myset.wxml-->
 <view>
-  <view>基本设置</view>
-  <view>主题选择</view>
+  <view class="setHeader">基本设置</view>
+  <view class="setBody">
+    <text>首页是否采用衔接滑动</text>
+    <switch checked="{{checked}}" bindchange="__switch1Change" />
+  </view>
+  <view class="setHeader">主题选择</view>
+  <view class="setBody">
+    <view>设置个人中心的背景图片</view>
+    <image src="cloud://w-1314.772d-w-1314-1257815135/photo/icon/箭头 (1).png"></image>
+  </view>
 </view>

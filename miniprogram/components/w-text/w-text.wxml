@@ -1,0 +1,11 @@
+<!--components/w-text/w-text.wxml-->
+<view class="MyText">
+  <view class="textHeader">
+    <view class="textHeaderOne">
+      <view class="textHeaderOne1">
+        <w-head />
+      </view>
+    </view>
+    <button bindtap="__start" class="textHeaderBtn"> 开始闯关</button>
+  </view>
+</view>

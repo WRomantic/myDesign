@@ -1,4 +1,4 @@
-// pages/ photo/w-components/w-tab-nav/w-tab-nav.js
+// common/w-nav/w-nav.js
 Component({
   properties: {
     itemArr: {
@@ -6,19 +6,16 @@ Component({
       value: []
     }
   },
-
-
   data: {
     currentData: 0
   },
-
   methods: {
     //点击切换，滑块index赋值
-    __checkCurrent: function(e) {
+    __checkCurrent: function (e) {
 
       if (this.data.currentData === e.target.dataset.current) {
         return false;
-      } 
+      }
       else {
         this.setData({
           currentData: e.target.dataset.current

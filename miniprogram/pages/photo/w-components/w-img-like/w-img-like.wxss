@@ -1,0 +1,5 @@
+/* pages/photo/w-components/w-img-like/w-img-like.wxss */
+image{
+  width: 50rpx;
+  height: 50rpx;
+}

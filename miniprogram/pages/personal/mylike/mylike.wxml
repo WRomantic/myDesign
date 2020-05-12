@@ -1,2 +1,4 @@
 <!--pages/personal/mylike/mylike.wxml-->
-<text>pages/personal/mylike/mylike.wxml</text>
+<view>
+  <w-video-black news="{{news}}" typeindex="{{currentType}}"/>
+</view>

@@ -3,6 +3,7 @@
   "usingComponents": {
     "w-nav-bar": "/components/w-nav-bar/w-nav-bar",
     "w-search": "/components/w-search/w-search",
-    "w-sort-body": "./w-components/w-sort-body/w-sort-body"
+    "w-sort-body": "./w-components/w-sort-body/w-sort-body",
+    "w-sort-scan": "./w-components/w-sort-scan/w-sort-scan"
   }
 }

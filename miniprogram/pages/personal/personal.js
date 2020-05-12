@@ -10,8 +10,6 @@ Page({
   },
 
   onLoad: function (options) {
-    getHistory().then(res => {
-        console.log(res);
-    })
+
   }
 })

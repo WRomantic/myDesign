@@ -4,7 +4,7 @@
   <view class="orctbodyA">
     <view class="orctbodHeader">{{indexData.title}}</view>
     <image src="{{indexData.indexImg}}"></image>
-    <view class="orctbodyScanTxt">
+    <!-- <view class="orctbodyScanTxt">
       <view>
         <text>识别结果：</text>
       </view>
@@ -20,7 +20,7 @@
         <text>垂丝海棠</text>
         <progress percent="2" show-info />
       </view>
-    </view>
+    </view> -->
     <view class="orctbodyFoots">
       <text>
         {{indexData.footTxt}}
@@ -28,9 +28,12 @@
     </view>
   </view>
   <view class="orctbodyB">
-    <w-btn url-dase="{{indexData.url}}" typedata="{{indexData.type}}"/>
-    <view class="orctbodyFX">
-      <text>分享好友</text>
+    <w-btn url-dase="{{indexData.url}}" typedata="{{indexData.type}}" />
+    <view class="orctbodyFX" class="{{indexBool?'shareblack':''}}">
+      <button open-type="share" class="btnshare" plain="true">
+        <image class="orctbodyFXimg" src="https://772d-w-1314-1257815135.tcb.qcloud.la/ORCYUN/icon/%E5%BE%AE%E4%BF%A1%E5%A5%BD%E5%8F%8B.png?sign=531bf88f72bf1380b60596204f1650ad&t=1585022207"></image>
+        <text>点击链接分享更多好友使用</text>
+      </button>
     </view>
   </view>
 </view>

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "w-img-like": "../w-img-like/w-img-like"
+  }
+}

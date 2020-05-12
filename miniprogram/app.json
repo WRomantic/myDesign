@@ -1,16 +1,19 @@
 {
   "pages": [
     "pages/orcText/orcText",
+    "pages/questions/questions",
+    "pages/questions/end/end",
     "pages/index/index",
     "pages/scantxt/scantxt",
     "pages/personal/personal",
     "pages/sort/sort",
-    "pages/ photo/ photo",
+    "pages/photo/photo",
     "pages/personal/feedback/feedback",
     "pages/personal/mylike/mylike",
     "pages/personal/myset/myset",
     "pages/personal/about/about",
-    "pages/personal/history/history"
+    "pages/personal/history/history",
+    "pages/personal/historyscan/historyscan"
   ],
   "tabBar": {
     "list": [
@@ -21,7 +24,7 @@
         "selectedIconPath": "/images/tabbar/sindex.png"
       },
       {
-        "pagePath": "pages/ photo/ photo",
+        "pagePath": "pages/photo/photo",
         "text": "发现",
         "iconPath": "/images/tabbar/fine.png",
         "selectedIconPath": "/images/tabbar/sfine.png"

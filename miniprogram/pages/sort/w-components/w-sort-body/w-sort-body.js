@@ -11,21 +11,22 @@ Component({
     textarr: {
       type: Array,
       value: null
+    },
+    sortType:{
+      type: String,
+      value: ""
     }
   },
-
-  /**
-   * 组件的初始数据
-   */
   data: {
   },
   created(){
   },
 
-  /**
-   * 组件的方法列表
-   */
-  methods: {
 
+  methods: {
+    btnScan: function (even) {
+      
+      this.triggerEvent('btnScan', { sortmyindex: even.currentTarget.dataset.myindex, sortType: this.data.sortType})
+    }
   }
 })

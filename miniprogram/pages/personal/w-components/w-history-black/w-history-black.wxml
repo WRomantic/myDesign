@@ -1,20 +1,47 @@
 <!--pages/personal/w-components/w-history-black/w-history-black.wxml-->
 <view>
-  <view wx:for="{{historyData}}" wx:for-item="itemData" wx:key="index" class="historyBlackB"      
-  bindlongpress="handleLongPress" 
-  data-id="{{itemData._id}}" data-index="{{index}}" 
+  <view wx:for="{{historyData}}" wx:for-item="itemData" wx:key="index" 
+  class="historyBlackB" bindlongpress="handleLongPress" 
+  data-id="{{itemData._id}}" data-index="{{index}}" data-typedata="{{typedata}}"
   bindtap="handleClick" data-fileID="{{itemData.fileID}}">
     <view class="historyBlackImg">
       <image src="{{itemData.fileID}}" mode="widthFix" />
     </view>
-    <view class="historyBlackTxt">
-      <view class="historyBlackTxtA" decode="{{true}}">
-        <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
-        <block wx:for="{{itemData.scanTxt}}" wx:for-item="itemWords" wx:key="index">
-          {{itemWords.words}}
-        </block>
+    <block wx:if="{{(typedata == 'font') || (typedata == 'accurate_base')}}">
+      <view class="historyBlackTxt">
+        <view class="historyBlackTxtA " decode="{{true}}">
+          <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+          <block wx:for="{{itemData.scanTxt}}" wx:for-item="itemWords" wx:key="index">
+            {{itemWords.words}}
+          </block>
+        </view>
+        <view class="historyBlackTxtTime ">时间：{{itemData.new_data}}</view>
       </view>
-      <view class="historyBlackTxtTime">时间：{{itemData.new_data}}</view>
-    </view>
+    </block>
+    <block wx:if="{{(typedata == 'animal') || (typedata == 'food') || (typedata == 'plant') || (typedata == 'scene') || (typedata == 'car')}}">
+      <view class="historyBlackTxt">
+        <view class="historyBlackTxtA " decode="{{true}}">
+          <block wx:for="{{itemData.scanTxt}}" wx:for-item="itemWords" wx:key="index">
+            <text>{{itemWords.name}}{{itemWords.root}}{{itemWords.year}}{{itemWords.score}}
+            </text>
+          </block>
+        </view>
+        <view class="historyBlackTxtTime ">时间：{{itemData.new_data}}</view>
+      </view>
+    </block>
+    <block wx:if="{{(typedata == 'redwine')}}">
+      <view class="historyBlackTxt">
+        <view class="historyBlackTxtA " decode="{{true}}">
+          <text>{{itemData.scanTxt.classifyByColor}}
+          {{itemData.scanTxt.classifyBySugar}}
+          {{itemData.scanTxt.description}}
+            </text>
+        </view>
+        <view class="historyBlackTxtTime ">时间：{{itemData.new_data}}</view>
+      </view>
+    </block>
+  </view>
+  <view wx:if="{{historyData.length == 0}}">
+    <image class="bgimg" src="https://772d-w-1314-1257815135.tcb.qcloud.la/ORCYUN/bg/%E7%A9%BA%E7%A9%BA.jpg?sign=6030fd64b155cce542c08c72556c94cc&t=1585037632" />
   </view>
 </view>

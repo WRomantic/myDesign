@@ -1,5 +1,4 @@
 /* pages/sort/w-components/w-sort-body/w-sort-body.wxss */
-
 .sortBodtHeaderA {
   width: 100%;
   overflow: hidden;

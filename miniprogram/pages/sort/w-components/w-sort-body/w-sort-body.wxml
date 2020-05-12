@@ -1,6 +1,6 @@
 <!--pages/sort/w-components/w-sort-body/w-sort-body.wxml-->
 <view class="sortBodtHeaderA">
-  <view class="sortEqual" wx:for="{{textarr}}" wx:key="index" wx:for-item="textarrs">
+  <view class="sortEqual" wx:for="{{textarr}}" wx:key="index" wx:for-item="textarrs" catchtap="btnScan" data-myindex="{{index}}" >
     <w-sort-block textarr="{{textarrs}}" />
   </view>
 </view>
